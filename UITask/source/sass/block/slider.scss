@@ -67,7 +67,7 @@
   top: calc(50% - 30px);
   width: 47px;
   height: 47px;
-  background-image: url("../../img/prev.png");
+  background-image: url("../img/prev.png");
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -75,7 +75,7 @@
 }
 .slider__next {
   left: calc(100% - 60px);
-  background-image: url("../../img/next.png");
+  background-image: url("../img/next.png");
 }
 .slider__photo-container {
   width: 100%;
