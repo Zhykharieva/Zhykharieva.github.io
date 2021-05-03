@@ -1,0 +1,21 @@
+{
+  "name": "js2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "eslint": "eslint src/",
+    "test": "npm run eslint",
+    "build": "webpack --mode development",
+    "start": "webpack-dev-server --open"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "engines": {
+    "node": "10"
+  }
+}

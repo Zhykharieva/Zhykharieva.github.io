@@ -1,0 +1,115 @@
+.footer{
+  padding-top: 30px;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+border-bottom:1px solid #474747;
+}
+.footer__block {
+  margin-bottom: 20px;
+}
+.footer__title {
+  color: $bg-white;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.footer a {
+  color: $bg-green;
+}
+.footer a:hover,
+.footer a:focus {
+  opacity: 0.4;
+}
+.footer a:active {
+  opacity: 0.2;
+}
+.footer__card-title{
+  margin: 0;
+}
+.footer__contacts a {
+  color: #999999;
+}
+
+.footer__card {
+display: flex;
+flex-direction: column;
+}
+
+.footer__card a {
+ align-self: flex-end;
+}
+
+address{
+  font-style:normal;
+}
+
+address p,
+.footer__contacts p,
+.footer__contacts h3,
+.social__list{
+  @include list-reset;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  margin-right: 10px;
+}
+.social__link{
+  display: flex;
+  margin-bottom: 15px;
+}
+.footer__contacts {
+  margin-top: 15px;
+}
+
+.form__contact{
+  display: flex;
+  flex-direction: column;
+}
+.form input,
+.form__textarea {
+  @include list-reset;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #383838;
+  color: $bg-white;
+}
+.footer button {
+  background-color: $bg-green;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.footer__copyright{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .footer__block {
+    width: 48%;
+  }
+
+}
+@media (min-width: $desktop-width) {
+
+  .footer__block {
+    width: 22%;
+  }
+
+}

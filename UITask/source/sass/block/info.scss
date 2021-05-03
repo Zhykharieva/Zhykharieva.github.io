@@ -1,0 +1,92 @@
+.info {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 40px;
+  border-top: 1px solid $bg-gray;
+}
+.info__wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+.info__block{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.info__img--about {
+  width: 270px;
+  height: 140px;
+}
+.info__title{
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.info__img{
+  width: 64px;
+  height: 64px;
+  border: 1px solid gray;
+  background-image: url("../../img/car.png");
+  background-size: cover;
+  background-position: center;
+}
+.info__quote {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 20px;
+}
+.info__quote-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.info__img--quote{
+  width: 53px;
+  height: 44px;
+  margin-right: 10px;
+  background-image: url("../../img/quotes.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+.info__card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+
+}
+.info__card-wrapper{
+  margin-left: 15px;
+  flex: 1;
+}
+.info__name {
+  margin: 0;
+}
+.info__link {
+ align-self: flex-end;
+ color: $bg-green;
+
+}
+.info__link:hover,
+.info__link:focus {
+  opacity: 0.4;
+}
+.info__link:active {
+  opacity: 0.2;
+}
+@media (min-width: $desktop-width) {
+  .info__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .info__block{
+    width: 280px;
+  }
+
+}
